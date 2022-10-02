@@ -18,11 +18,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <!-- class="animate-in" -->
-    <!-- <script>window.addEventListener("beforeunload", function () {
-        document.body.classList.add("animate-out");
-      });
-    </script> -->
     <div class="container-main">
         <div class="navigation">
             <div class="burger-menu">
@@ -43,8 +38,10 @@
             <div class="introduction" id="home">
                 <div class="container-inner">
                     <!-- THE ANIMATION -->
-                    <div class="background-animation" id="background-animation">
-                        <script src="./js/min/bg_min.js"></script>
+                    <div class="background-animation" id="background-animation" onresize="resizeBGCanvas()">
+                        <!-- <script src="./js/backgroundAnimation.js"></script> -->
+                        <canvas id="canvas"></canvas>
+                        <script src="./js/bgAnimate.js"></script>
                     </div>
 
                     <div class="intro-info">
