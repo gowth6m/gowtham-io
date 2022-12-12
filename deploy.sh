@@ -27,5 +27,5 @@ git add "$FILE_NAME"
 # Commit the changes
 git commit -m "Added $FILE_NAME to the gh-pages branch"
 
-# Push the changes to the apple branch on GitHub
-git push origin gh-pages
+# Push the changes to the gh-pages branch on GitHub
+git push origin 
