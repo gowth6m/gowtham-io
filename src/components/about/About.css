@@ -1,0 +1,42 @@
+/* Edit variables here to ensure timeline doesn't mess up */
+:root {
+    --timelineWidth: 5px;
+    --timelineCircleWidth: 1.4em;
+    --timeLineLeftMargin: 8%;
+    --timelineItemHeight: 40%;
+    --gapBetween: 10px;
+}
+
+.about-page {
+    min-height: 100svh;
+    width: 100%;
+}
+
+.about-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+}
+
+.about-section-one {
+    flex-direction: column;
+}
+
+.about-title span {
+    color: var(--white);
+}
+
+.about-section-two {
+    flex-direction: column;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .about-page-container {
+        flex-direction: row;
+    }
+}
+

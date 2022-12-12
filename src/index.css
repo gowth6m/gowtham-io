@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start + 2P &display=swap');:root {
+    --white: #f8f8f8;
+    --greyWhite: #cccccc;
+    --starColorTwo: rgba(0, 0, 0, 0.25);
+    --canvasColor: rgb(216, 216, 216);
+}
+
+:root {
+    --body: #0e0e0e;
+    /* INTRO */
+    --introContainer: var(--white);
+    --titleGowtham: var(--white);
+    --titleOther: var(--white);
+    --aboutTextColor: var(--white);
+    --sideText: var(--white);
+    --scrollArrow: var(--white);
+    /* NAV */
+    --NavColor: var(--white);
+    --aboutTextColor: var(--white);
+    /* PORTFOLIO */
+    --portfolioBG: #040403;
+    --portfolioGallery: rgb(20, 20, 20);
+    --portfolioGalleryHover: rgba(255, 255, 255, 0.4);
+}
+
+:root {
+    --body-font: 'Montserrat', sans-serif;
+    --big-title-font-size: 5rem;
+    --big2-title-font-size: 6rem;
+    --title-font-size: 4rem;
+    --big-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 0.938rem;
+
+    --padding-sm: 10px;
+    --padding-md: 20px;
+    --padding-lg: 30px;
+    --padding-xlg: 40px;
+}
+
+@media screen and(min-width: 768px){:root {
+        --big2-title-font-size: 8rem;
+        --big-title-font-size: 6.5rem;
+        --title-font-size: 5.5rem;
+        --big-font-size: 3.5rem;
+        --h2-font-size: 2rem;
+        --normal-font-size: 1rem;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
+body,
+html {
+    text-align: center;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    scroll-behavior: smooth;
+    min-height: 100dvh;
+    min-height: -webkit-fill-available;
+    overflow-x: hidden;
+    background-color: var(--body);
+    color: var(--white);
+    font-family: var(--body-font);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+ul {
+    list-style: none;
+}
+
+.screen-max {
+    /* max-width: 1920px; */
+    max-width: 1440px;
+    /* max-width: 1024px; */
+    margin: 0 auto;
+}
+
+.container-main {
+    height: 100dvh;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+}
+
+.container {
+    overflow: hidden;
+}
+
+.container-inner {
+    margin: auto;
+    position: relative;
+    background-color: var(--white);
+    width: 97%;
+    top: 3%;
+    height: 94%;
+    overflow: hidden;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,29 @@
+:root {
+    --backgroundRadius: 2em;
+}
+
+.section-title {
+    font-weight: 900;
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: var(--white);
+    color: var(--body);
+    text-transform: uppercase;
+    letter-spacing: -5px;
+    font-size: max(3.5em, 5vw);
+    margin-top: 20%;
+}
+
+.section-title span {
+    color: var(--white);
+}
+
+.sec-ele-pad-v {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}

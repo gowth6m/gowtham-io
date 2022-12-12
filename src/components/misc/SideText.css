@@ -1,0 +1,43 @@
+:root {
+    --side-text-width: 20px
+}
+
+.side-text-left,
+.side-text-right {
+    display: none
+}
+
+.side-text-left {
+    z-index: 5;
+    top: 75%;
+    left: 2%;
+    position: absolute;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+}
+
+.side-text-right {
+    z-index: 5;
+    top: 75%;
+    right: 2%;
+    position: absolute;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    transform: rotate(180deg);
+}
+
+@media screen and (min-width: 768px) {
+    .side-text-left,
+    .side-text-right {
+        top: 42%;
+        display: inline;
+    }
+
+    .side-text-left {
+        left: 3%;
+    }
+
+    .side-text-right {
+        right: 3%;
+    }
+}

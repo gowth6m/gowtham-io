@@ -1,3 +1,3 @@
 # My Web Portfolio
 
-My portfolio: go visit www.gowtham.co.uk to see it in action!
+[Visit my website](https://gowth6m.github.io/gowtham-io)

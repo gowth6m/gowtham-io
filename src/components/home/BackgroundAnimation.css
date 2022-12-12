@@ -1,0 +1,26 @@
+.home-canvas-container {
+    position: absolute;
+    background-color: var(--body);
+    width: 100%;
+    height: 100 svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-canvas {
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    width: calc(100%);
+    height: calc(100svh);
+    border-bottom-left-radius: var(--backgroundRadius);
+    border-bottom-right-radius: var(--backgroundRadius);
+}
+
+@media screen and (min-width: 768px) {
+    .home-canvas {
+        width: calc(100% - 3em);
+        height: calc(100svh - 3em);
+        border-radius: var(--backgroundRadius);
+    }
+}
