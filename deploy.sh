@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the file name
-FILE_NAME="CNAME"
+FILE_NAME="test.txt"
 
 # Check if the file exists
 if [ ! -f "$FILE_NAME" ]; then
