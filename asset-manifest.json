@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/gowtham-io/static/css/main.284bfe30.css",
+    "main.js": "/gowtham-io/static/js/main.0fec0622.js",
+    "index.html": "/gowtham-io/index.html",
+    "main.284bfe30.css.map": "/gowtham-io/static/css/main.284bfe30.css.map",
+    "main.0fec0622.js.map": "/gowtham-io/static/js/main.0fec0622.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.284bfe30.css",
+    "static/js/main.0fec0622.js"
+  ]
+}
