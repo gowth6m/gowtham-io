@@ -28,4 +28,4 @@ git add "$FILE_NAME"
 git commit -m "Added $FILE_NAME to the gh-pages branch"
 
 # Push the changes to the gh-pages branch on GitHub
-git push origin 
+git push origin gh-pages
