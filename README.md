@@ -1,3 +1,3 @@
 # My Web Portfolio
 
-[Visit my website](https://gowth6m.github.io/myportfolio)
+[Visit my website](https://gowth6m.github.io/gowtham-io)
