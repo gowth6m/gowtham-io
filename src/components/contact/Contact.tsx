@@ -25,26 +25,32 @@ export function Contact() {
           data-aos="fade-up"
           data-aos-duration="1000"
           className="contact-form flex"
-          action="https://formsubmit.co/913dcdc22053ca7abfe5f79b178b8ed6"
+          action="https://formsubmit.co/91916c7c0b845c196d6c84a91e84301b"
           method="POST"
         >
           <input
-            className="contact-input-name"
+            className="contact-form-child"
             type="text"
             name="name"
             placeholder="name"
             required
           />
           <input
-            className="contact-input-email"
+            className="contact-form-child"
             type="email"
             name="email"
             placeholder="email"
             required
           />
-          <textarea className="contact-input-desc" value={value} rows={5} placeholder="message"/>
+         
+          <textarea
+            className="contact-form-child"
+            value={value}
+            rows={6}
+            placeholder="message"
+          />
           <button className="contact-submit-btn hover-target" type="submit">
-            SEND
+            GET IN TOUCH <i className="fa-sharp fa-solid fa-paper-plane"></i>
           </button>
         </form>
       </div>

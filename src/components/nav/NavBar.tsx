@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 
@@ -41,6 +41,18 @@ function NavBar() {
     window.open(socialLink);
   };
 
+  const [scrollValue, setScrollValue] = useState(0);
+
+  useEffect(() => {
+    const onScroll = (e: any) => {
+      setScrollValue(e.target.documentElement.scrollTop);
+    };
+
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [scrollValue]);
+
   return (
     <>
       <nav className="navbar screen-max">
@@ -64,32 +76,58 @@ function NavBar() {
                 className="nav-links"
                 onClick={() => {
                   handleClick();
-                  handleClickScroll('home');
+                  handleClickScroll("home");
                 }}
               >
-                Home
+                home
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/" className="nav-links" onClick={() => {
+              <NavLink
+                to="/"
+                className="nav-links"
+                onClick={() => {
                   handleClick();
-                  handleClickScroll('aboutme');
-                }}>
-                About
+                  handleClickScroll("about");
+                }}
+              >
+                about
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                to="/"
+                className="nav-links"
+                onClick={() => {
+                  handleClick();
+                  handleClickScroll("skills");
+                }}
+              >
+                skills
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
                 to="/portfolio"
                 className="nav-links"
-                onClick={handleClick}
+                onClick={() => {
+                  handleClick();
+                  handleClickScroll("portfolio");
+                }}
               >
-                Portfolio
+                portfolio
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="/" className="nav-links" onClick={handleClick}>
-                Contact Us
+              <NavLink
+                to="/"
+                className="nav-links"
+                onClick={() => {
+                  handleClick();
+                  handleClickScroll("contact");
+                }}
+              >
+                contact
               </NavLink>
             </li>
             <div className="nav-socials">

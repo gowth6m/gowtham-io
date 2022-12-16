@@ -1,0 +1,121 @@
+:root {
+    --portItemWidth: 80vw;
+    --portItemWidthSmall: 20vw;
+}
+
+.portfolio-item-container {
+    background-color: transparent;
+    height: calc(var(--portItemWidth)/4*3);
+    width: var(--portItemWidth);
+    display: flex;
+    margin: 0.8em 0;
+    padding: 1em;
+    flex-direction: column;
+    border: 2px solid var(--white);
+    border-radius: var(--itemRadius);
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-item-img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    object-fit: cover;
+}
+
+.portfolio-item-details {
+    margin-top: auto;
+    flex-direction: column;
+    background-color: rgb(202, 202, 202);
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.portfolio-item-title {
+    padding: 0.5em;
+    font-weight: 600;
+   
+}
+.portfolio-item-desc {
+    padding: 0.5em;
+}
+
+.portfolio-item-bot {
+    width: 100%;
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.portfolio-item-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.portfolio-item-header-links {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.portfolio-item-header-links i {
+    margin: 0 5px;
+}
+
+.portfolio-item-body {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 10px 0;
+    height: 100%;
+}
+
+.portfolio-item-body-title {
+    font-weight: 900;
+    font-size: 120%;
+}
+
+.portfolio-item-body-desc {
+    font-size: 90%;
+}
+
+.portfolio-item-body-tag-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: auto;
+}
+
+.portfolio-item-body-tag {
+    margin: 2px;
+    padding: 5px 10px;
+    border: 1px solid var(--white);
+    border-radius: var(--itemRadius);
+    background-color: var(--white);
+    color: black;
+    font-size: var(--textItemSize);
+}
+
+@media screen and (min-width: 768px) {
+    .portfolio-item-container {
+        height: calc(var(--portItemWidthSmall)/4*3);
+        width: var(--portItemWidthSmall);
+        margin: 1em;
+    }
+
+
+}

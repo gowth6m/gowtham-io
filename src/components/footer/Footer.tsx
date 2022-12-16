@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import "./Footer.css";
 
 export function Footer() {
@@ -12,6 +13,9 @@ export function Footer() {
     }
   };
 
+  const navigate = useNavigate();
+  const handleNavigate = (route:string) => navigate(("/"+route));
+
   return (
     <>
       <div className="footer">
@@ -19,24 +23,69 @@ export function Footer() {
           <div className="footer-inner">
             {/* Footer list */}
             <div className="footer-list">
-              <div className="footer-list-item hover-target" onClick={()=>handleClickScroll('home')}>Home</div>
-              <div className="footer-list-item hover-target" onClick={()=>handleClickScroll('aboutme')}>About Me</div>
-              <div className="footer-list-item hover-target" onClick={()=>handleClickScroll('home')}>Skills</div>
-              <div className="footer-list-item hover-target" onClick={()=>handleClickScroll('home')}>Portfolio</div>
+              <div
+                className="footer-list-item hover-target"
+                onClick={() => {
+                  handleClickScroll("home");
+                  handleNavigate("");
+                }}
+              >
+                Home
+              </div>
+              <div
+                className="footer-list-item hover-target"
+                onClick={() => {
+                  handleClickScroll("about");
+                  handleNavigate("");
+                }}
+              >
+                About
+              </div>
+              <div
+                className="footer-list-item hover-target"
+                onClick={() => {
+                  handleClickScroll("skills");
+                  handleNavigate("");
+                }}
+              >
+                Skills
+              </div>
+              <div
+                className="footer-list-item hover-target"
+                onClick={() => {
+                  handleClickScroll("portfolio");
+                  handleNavigate("portfolio");
+                }}
+              >
+                Portfolio
+              </div>
+              <div
+                className="footer-list-item hover-target"
+                onClick={() => {
+                  handleClickScroll("contact");
+                  handleNavigate("");
+                }}
+              >
+                Contact
+              </div>
             </div>
 
             {/* Socials */}
             <div className="footer-socials flex-c">
-              <div onClick={()=>openSocial('https://github.com/gowth6m')}>
+              <div onClick={() => openSocial("https://github.com/gowth6m")}>
                 <i className="fa-brands fa-2xl fa-github hover-target"></i>
               </div>
-              <div onClick={()=>openSocial('https://www.linkedin.com/in/gowth6m/')}>
+              <div
+                onClick={() =>
+                  openSocial("https://www.linkedin.com/in/gowth6m/")
+                }
+              >
                 <i className="fa-brands fa-2xl fa-linkedin hover-target"></i>
               </div>
-              <div onClick={()=>openSocial('https://gowtham.co.uk/')}>
+              <div onClick={() => openSocial("https://gowtham.co.uk/")}>
                 <i className="fa-brands fa-2xl fa-youtube hover-target"></i>
               </div>
-              <div onClick={()=>openSocial('https://twitter.com/gowth6m')}>
+              <div onClick={() => openSocial("https://twitter.com/gowth6m")}>
                 <i className="fa-brands fa-2xl fa-twitter hover-target"></i>
               </div>
             </div>

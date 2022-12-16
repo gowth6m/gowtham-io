@@ -1,0 +1,30 @@
+.page-not-found {
+    min-height: 100svh;
+    width: 100%;
+}
+
+.page-not-found-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100svh;
+    width: 90%;
+}
+
+.redirect-home-btn {
+    cursor: pointer;
+    background-color: var(--white);
+    color: black;
+    font-weight: 900;
+    font-size: max(2em, 2vw);
+    padding: 0.5em 1em;
+    border-radius: var(--itemRadius);
+    border: white 1px solid;
+}
+
+.redirect-home-btn:hover,
+.redirect-home-btn:focus {
+    background-color: var(--body);
+    color: var(--white);
+}

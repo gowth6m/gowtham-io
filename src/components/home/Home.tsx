@@ -1,7 +1,10 @@
+import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { About } from "../about/About";
-import {Contact } from "../contact/Contact";
+import { Contact } from "../contact/Contact";
+import { Separator } from "../misc/Separator";
 import { SideText } from "../misc/SideText";
+import { PortfolioPreview } from "../portfolio/PortfolioPreview";
 import { Skills } from "../skills/Skills";
 import { BackgroundAnimation } from "./BackgroundAnimation";
 import "./Home.css";
@@ -73,9 +76,18 @@ export function Home() {
   };
 
   return (
-    <>
+    <motion.div
+      className="motion-div"
+      initial={{ x: window.innerWidth, opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{
+        x: -window.innerWidth,
+        opacity: 1,
+        transition: { duration: 0.5 },
+      }}
+    >
       <div className="home-page flex" id="home">
-        <SideText left="- HELLO THERE -" right="- HELLO THERE -" />
+        <SideText left="- hello there -" right="- scroll down -" />
         <BackgroundAnimation />
         <div className="screen-max flex">
           <div className="home-page-container">
@@ -90,18 +102,24 @@ export function Home() {
             </div>
 
             <i
-              onClick={() => handleClickScroll("aboutme")}
+              onClick={() => handleClickScroll("about")}
               className="scroll-down fa-3x fa-solid fa-angle-down"
             ></i>
           </div>
         </div>
       </div>
 
+      <Separator />
       <About />
 
+      <Separator />
+      <PortfolioPreview />
+
+      <Separator />
       <Skills />
 
+      <Separator />
       <Contact />
-    </>
+    </motion.div>
   );
 }

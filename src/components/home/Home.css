@@ -1,3 +1,7 @@
+.motion-div {
+    width: 100%;
+}
+
 .home-page {
     height: 100svh;
     width: 100%;
@@ -14,10 +18,10 @@
 
 .title {
     font-size: max(3em, 5vw);
-    font-family: 'Hammersmith One', sans-serif;
+    font-family: var(--title-font);
     padding: 0 5%; 
     position: absolute;
-    top: 40%;
+    top: 35%;
 }
 
 .title-gowtham {
@@ -40,7 +44,7 @@
 .title-text {
     transition: 0s ease;
     font-size: var(--big-font-size);
-    font-family: 'Hammersmith One', sans-serif;
+    font-family: var(--body-font);
     font-weight: 500;
     color: var(--titleOther);
     text-align: center;
@@ -93,8 +97,12 @@
     }
 }
 
-@media screen and (max-width: 960px) {
+
+/* ipad max width */
+@media screen and (min-width: 768px) {
     .title {
-        top: 35%;
+        top: 40%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 }

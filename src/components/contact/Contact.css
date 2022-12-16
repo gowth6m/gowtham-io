@@ -1,34 +1,35 @@
+:root {
+    --form-input-size: max(1.2em, 1vw);
+    --form-input-radius: 1.2em;
+    --form-font: var(--body-font);
+}
+
 .contact-form {
     flex-direction: column;
     justify-content: space-around;
-    /* background-color: coral; */
     border-radius: 16px;
     margin: 15% 0;
 }
 
-.contact-form input {
-    width: 80%;
-    border-radius: 10px;
+.contact-form-child {
+    border-radius: var(--form-input-radius);
+    font-size: var(--form-input-size);
+    font-family: var(--form-font);
+    background-color: var(--white);
+    width: 85%;
     margin: 1%;
-    font-size: large;
     text-align: center;
     padding: 2%;
-}
-
-.contact-form textarea {
-    width: 80%;
-    border-radius: 10px;
-    margin: 1%;
-    font-size: large;
-    text-align: center;
-    padding: 2%;
+    border: var(--white) 1px solid;
 }
 
 .contact-submit-btn {
-    width: 80%;
-    border-radius: 10px;
-    margin: 1%;
-    font-size: large;
+    cursor: pointer;
+    font-family: var(--form-font);
+    width: 85%;
+    border-radius: var(--form-input-radius);
+    margin: 2% 1%;
+    font-size: var(--form-input-size);
     text-align: center;
     background-color: transparent;
     color: var(--white);
@@ -36,4 +37,10 @@
     text-transform: capitalize;
     border: var(--white) 1px solid;
     padding: 2%;
+}
+
+.contact-submit-btn:hover,
+.contact-submit-btn:focus {
+    background-color: var(--white);
+    color: black;
 }
