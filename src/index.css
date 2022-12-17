@@ -132,3 +132,17 @@ display: flex;
 justify-content: center;
 align-items: center;
 }
+
+
+body::-webkit-scrollbar {
+    width: 2px;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(53, 53, 53);
+    outline: none;
+}

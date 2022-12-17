@@ -4,6 +4,7 @@ import { About } from "../about/About";
 import { Contact } from "../contact/Contact";
 import { Separator } from "../misc/Separator";
 import { SideText } from "../misc/SideText";
+import { Portfolio } from "../portfolio/Portfolio";
 import { PortfolioPreview } from "../portfolio/PortfolioPreview";
 import { Skills } from "../skills/Skills";
 import { BackgroundAnimation } from "./BackgroundAnimation";
@@ -113,7 +114,12 @@ export function Home() {
       <About />
 
       <Separator />
-      <PortfolioPreview />
+      {window.innerWidth > 768 ? (
+        <Portfolio standalone={false} />
+      ) : (
+        <PortfolioPreview />
+      )}
+      {/* <PortfolioPreview /> */}
 
       <Separator />
       <Skills />

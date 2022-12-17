@@ -44,3 +44,33 @@
     background-color: var(--white);
     color: black;
 }
+
+@media screen and (min-width: 768px) {
+    .contact-page {
+        width: 100%;
+    }
+
+    .contact-page-container {
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .contact-title {
+        margin: 1%;
+    }
+
+    .contact-form {
+        width: 50%;
+    }
+
+    .contact-form {
+        flex-direction: column;
+        justify-content: space-around;
+        border-radius: 16px;
+        margin: 2% 0;
+    }
+}

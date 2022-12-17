@@ -1,6 +1,7 @@
 :root {
     --portItemWidth: 80vw;
-    --portItemWidthSmall: 20vw;
+    --portItemWidthSmall: max(20vw, auto);
+    --portItemHeight: 30vh;
 }
 
 .portfolio-item-container {
@@ -55,12 +56,16 @@
     left: 0;
 }
 
-
 .portfolio-item-header {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+}
+
+.portfolio-item-header-item {
+    cursor: pointer;
+    z-index: 5;
 }
 
 .portfolio-item-header-links {
@@ -72,6 +77,13 @@
 
 .portfolio-item-header-links i {
     margin: 0 5px;
+    cursor: pointer;
+}
+
+.portfolio-item-header-links i:hover, 
+.portfolio-item-header-links i:focus {
+    scale: 1.2;
+    text-shadow: 0px 0px 30px white,0px 0px 30px white,0px 0px 30px white,0px 0px 10px #ffffff,0px 0px 10px #ffffff;
 }
 
 .portfolio-item-body {
@@ -112,10 +124,8 @@
 
 @media screen and (min-width: 768px) {
     .portfolio-item-container {
-        height: calc(var(--portItemWidthSmall)/4*3);
-        width: var(--portItemWidthSmall);
+        height: var(--portItemHeight);
+        width: calc(var(--portItemHeight)/3*4);
         margin: 1em;
     }
-
-
 }

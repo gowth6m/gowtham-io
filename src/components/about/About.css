@@ -57,8 +57,7 @@
 .about-me-pic img {
     margin-top: 10px;
     width: 100%;
-    border-bottom-left-radius: var(--backgroundRadius);
-    border-bottom-right-radius: var(--backgroundRadius);
+    border-radius: var(--backgroundRadius);
 }
 
 .about-section-one {

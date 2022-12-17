@@ -60,6 +60,7 @@
   .footer-socials div i:focus,
   .footer-socials div i:hover {
     cursor: pointer;
+    scale: 1.2;
     text-shadow: 0px 0px 30px white,0px 0px 30px white,0px 0px 30px white,0px 0px 10px #ffffff,0px 0px 10px #ffffff;
   }
 

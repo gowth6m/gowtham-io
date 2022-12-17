@@ -9,11 +9,11 @@ function AnimatedRoutes() {
   return (
     <AnimatePresence>
       {/* <ScrollToTop> */}
-        <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Home />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="*" element={<PageNotFound />} />
-        </Routes>
+      <Routes location={location} key={location.pathname}>
+        <Route path="/" element={<Home />} />
+        <Route path="/portfolio" element={<Portfolio standalone={true} />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
       {/* </ScrollToTop> */}
     </AnimatePresence>
   );

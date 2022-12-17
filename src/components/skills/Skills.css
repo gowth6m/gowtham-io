@@ -1,5 +1,5 @@
 .skills-page {
-    min-height: 100svh;
+    /* min-height: 100svh; */
     width: 100%;
 }
 
@@ -46,4 +46,25 @@
     margin: 0.3em 0.4em;
     border-radius: 15px;
     border: 1px solid var(--white);
+}
+
+@media screen and (min-width: 768px) {
+    .skills-page-container {
+        height: fit-content;
+    }
+
+    .skills-title {
+        margin: 1%;
+    }
+
+    .skills-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .skills-section {
+        padding: 1%;
+        width: 95%;
+    }
 }
