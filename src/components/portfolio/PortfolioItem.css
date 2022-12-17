@@ -2,6 +2,7 @@
     --portItemWidth: 80vw;
     --portItemWidthSmall: max(20vw, auto);
     --portItemHeight: 30vh;
+    --portItemHeightSmall: 15vh;
 }
 
 .portfolio-item-container {
@@ -123,6 +124,14 @@
 }
 
 @media screen and (min-width: 768px) {
+    .portfolio-item-container {
+        width: 45%;
+        height: 20vh;
+        margin: 1em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
     .portfolio-item-container {
         height: var(--portItemHeight);
         width: calc(var(--portItemHeight)/3*4);

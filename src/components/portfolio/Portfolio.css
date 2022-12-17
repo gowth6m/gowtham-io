@@ -97,3 +97,28 @@
     }
     
 }
+
+@media screen and (min-width: 768px) {
+
+    .portfolio-items-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-width: calc(100% - 6em);
+    }
+
+    .portfolio-preview-view-more {
+        width: calc(100% - 6em);
+    }
+
+    .portfolio-page-container {
+        position: relative;
+    }
+
+    .portfolio-title {
+        margin: 1%;
+    }
+    
+}

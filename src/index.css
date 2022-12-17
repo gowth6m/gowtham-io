@@ -7,14 +7,8 @@
 
 :root {
     --body: #0e0e0e;
-    /* INTRO */
-    --introContainer: var(--white);
-    --titleGowtham: var(--white);
-    --titleOther: var(--white);
-    --aboutTextColor: var(--white);
-    --sideText: var(--white);
-    --scrollArrow: var(--white);
-    /* NAV */
+    /* --body: #1f1f1f; */
+ 
     --NavColor: var(--white);
     --aboutTextColor: var(--white);
     /* PORTFOLIO */

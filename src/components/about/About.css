@@ -8,7 +8,6 @@
 }
 
 .about-page {
-    /* min-height: 100svh; */
     width: 100%;
 }
 
@@ -24,6 +23,7 @@
 .about-section-one {
     flex-direction: column;
     height: 100%;
+    border-radius: var(--backgroundRadius);
 }
 
 .about-title {
@@ -118,7 +118,6 @@
     color: var(--white);
 }
 
-
 @media screen and (min-width: 768px) {
     .about-page {
         height: 100svh;
@@ -142,10 +141,10 @@
         background-color: var(--white);
         color: black;
         border-radius: var(--backgroundRadius);
-        width: 84%;
         height: 100%;
-        transform: translateX(2.5em);
-        margin: 0 0.5em;
+        width: calc(100% - 20% - var(--timelineWidth));
+        transform: translateX(calc(var(--timeLineLeftMargin) - 2% - var(--timelineCircleWidth)/2 + var(--timelineWidth) * 2));
+        margin-left: 2%;
     }
 
     .about-body {
