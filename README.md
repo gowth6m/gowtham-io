@@ -2,7 +2,12 @@
 
 [Visit my website](https://gowth6m.github.io/gowtham-io)
 
-To run the website
+To get dependencies
+```
+npm install
+```
+
+To run website
 ```
 npm start
 ```
