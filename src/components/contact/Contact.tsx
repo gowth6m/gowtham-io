@@ -2,17 +2,17 @@ import React from "react";
 import "./Contact.css";
 
 export function Contact() {
-  const openSocial = (socialLink: string) => {
-    window.open(socialLink);
-  };
+  // const openSocial = (socialLink: string) => {
+  //   window.open(socialLink);
+  // };
 
-  const handleClickScroll = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-  const [value, setValue] = React.useState();
+  // const handleClickScroll = (id: string) => {
+  //   const element = document.getElementById(id);
+  //   if (element) {
+  //     element.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // };
+  const [value] = React.useState();
 
   return (
     <div id="contact" className="contact-page flex">
