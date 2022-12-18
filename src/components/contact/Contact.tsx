@@ -45,6 +45,7 @@ export function Contact() {
          
           <textarea
             className="contact-form-child"
+            name="message"
             value={value}
             rows={6}
             placeholder="message"
