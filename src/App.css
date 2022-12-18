@@ -24,3 +24,25 @@
     flex-direction: row;
     align-items: center;
 }
+
+.loading-screen {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-screen svg {
+    fill-rule:nonzero;
+    clip-rule:evenodd;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+    .loading-screen svg {
+        width: 20%;
+    }
+}
