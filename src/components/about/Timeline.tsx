@@ -12,7 +12,7 @@ export function Timeline() {
     [
       "Worked on university wide student app in Flutter",
       "Worked on chatbot used by university students",
-      "Built games in in typescript used in student fairs",
+      "Built games in typescript used at student fairs",
     ],
     [
       "Flutter",
