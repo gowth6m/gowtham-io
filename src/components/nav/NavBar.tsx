@@ -8,7 +8,7 @@ function NavBar() {
   const { lightThemeGlobal, setLightThemeGlobal } = useGlobalContext();
 
   const changeTheme = () => {
-    if (lightThemeGlobal) {
+    if (!lightThemeGlobal) {
       document.documentElement.style.setProperty("--body", "#f8f8f8");
       document.documentElement.style.setProperty(
         "--black",

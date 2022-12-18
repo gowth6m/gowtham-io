@@ -58,7 +58,7 @@ export function BackgroundAnimation() {
         brightness: number,
         size: number
       ) => {
-        const intensity = brightness * 255 + (lightThemeGlobal ? 225 : 0);
+        const intensity = brightness * 255 + (lightThemeGlobal ? 0 : 0);
 
         const rgb =
           "rgb(" + intensity + "," + intensity + "," + intensity + ")";
