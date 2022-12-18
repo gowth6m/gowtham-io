@@ -30,7 +30,7 @@
     text-transform: uppercase;
     font-weight: 900;
     letter-spacing: 6px;
-    color: var(--portfolioBG);
+    color: var(--body);
     text-shadow: -4px 0 var(--white), 0 4px var(--white), 4px 0 var(--white), 0 -4px var(--white);
 }
 
@@ -78,8 +78,7 @@
 
 .scroll-down:focus,
 .scroll-down:hover {
-    /* font-size: 4em; */
-    text-shadow: 0px 0px 30px white,0px 0px 30px white,0px 0px 30px white,0px 0px 10px #553300,0px 0px 10px #553300;
+    text-shadow: 0px 0px 30px var(--white),0px 0px 30px var(--white),0px 0px 30px var(--white),0px 0px 10px var(--white),0px 0px 10px var(--white);
 }
 
 @keyframes scroll-down-arrow {

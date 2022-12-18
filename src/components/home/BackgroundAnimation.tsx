@@ -1,9 +1,11 @@
-import React from "react";
 import { useState, useEffect, useRef } from "react";
+import { useGlobalContext } from "../context/GlobalContext";
 import "./BackgroundAnimation.css";
 
 export function BackgroundAnimation() {
   const [windowSize, setWindowSize] = useState(getWindowSize());
+  // const [canvasColor, setCanvasColor] = useState(0);
+  const { lightThemeGlobal } = useGlobalContext();
 
   function getWindowSize() {
     const { innerWidth, innerHeight } = window;
@@ -20,7 +22,6 @@ export function BackgroundAnimation() {
     };
   }, []);
 
-  // ---------------------------------------------------------
   // Animation
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const state = {
@@ -57,7 +58,8 @@ export function BackgroundAnimation() {
         brightness: number,
         size: number
       ) => {
-        const intensity = brightness * 255;
+        const intensity = brightness * 255 + (lightThemeGlobal ? 225 : 0);
+
         const rgb =
           "rgb(" + intensity + "," + intensity + "," + intensity + ")";
         c!.fillStyle = rgb;
@@ -123,19 +125,17 @@ export function BackgroundAnimation() {
 
       requestAnimationFrame(init);
     }
-  }, [state.canvasHeight, state.canvasWidth]);
+  }, [lightThemeGlobal, state.canvasHeight, state.canvasWidth]);
 
   return (
-    <>
-      <div className="home-canvas-container">
-        <canvas
-          id="homeCanvas"
-          className="home-canvas"
-          ref={canvasRef}
-          width={state.canvasWidth}
-          height={state.canvasHeight}
-        ></canvas>
-      </div>
-    </>
+    <div className="home-canvas-container">
+      <canvas
+        id="homeCanvas"
+        className="home-canvas"
+        ref={canvasRef}
+        width={state.canvasWidth}
+        height={state.canvasHeight}
+      ></canvas>
+    </div>
   );
 }

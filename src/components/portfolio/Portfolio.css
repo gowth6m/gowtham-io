@@ -27,7 +27,7 @@
     cursor: pointer;
     padding: 5px 12px;
     margin: 5px 5px;
-    color: black;
+    color: var(--black);
     font-weight: 600;
     background-color: var(--white);
     border: var(--white) 1px solid;
@@ -36,12 +36,12 @@
 
 .filters-item:hover,
 .filters-item:focus {
-    background-color: black;
+    background-color: var(--black);
     color: var(--white);
 }
 
 .filters-item-active {
-    background-color: black;
+    background-color: var(--black);
     color: var(--white);
 }
 
@@ -50,10 +50,10 @@
     background-color: var(--white);
     padding: 0.6em;
     border-radius: var(--itemRadius);
-    color: black;
+    color: var(--black);
     font-size: max(1.2em, 2vw);
     font-weight: 600;
-    border: white 2px solid;
+    border: var(--white) 2px solid;
     margin: 1em 0;
 }
 

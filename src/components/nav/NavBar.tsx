@@ -1,9 +1,28 @@
 import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import { useGlobalContext } from "../context/GlobalContext";
 import "./NavBar.css";
 
 function NavBar() {
   const [click, setClick] = useState(false);
+  const { lightThemeGlobal, setLightThemeGlobal } = useGlobalContext();
+
+  const changeTheme = () => {
+    if (lightThemeGlobal) {
+      document.documentElement.style.setProperty("--body", "#f8f8f8");
+      document.documentElement.style.setProperty(
+        "--black",
+        "rgb(225, 225, 225)"
+      );
+      document.documentElement.style.setProperty("--white", "black");
+      setLightThemeGlobal(!lightThemeGlobal);
+    } else {
+      document.documentElement.style.setProperty("--body", "#0e0e0e");
+      document.documentElement.style.setProperty("--black", "black");
+      document.documentElement.style.setProperty("--white", "#f8f8f8");
+      setLightThemeGlobal(!lightThemeGlobal);
+    }
+  };
 
   const handleClickScroll = (id: string) => {
     const element = document.getElementById(id);
@@ -60,7 +79,10 @@ function NavBar() {
           <NavLink
             to="/"
             className="nav-logo"
-            onClick={() => handleClickScroll("home")}
+            onClick={() => {
+              // handleClickScroll("home");
+              changeTheme();
+            }}
           >
             <img
               src={process.env.PUBLIC_URL + "/assets/logo_transparent.svg"}

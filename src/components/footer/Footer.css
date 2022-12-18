@@ -1,7 +1,7 @@
 .footer {
     min-height: 20vh;
     width: 100%;
-    background-color: rgb(0, 0, 0);
+    background-color: var(--black);
 }
 
 .footer-inner {
@@ -20,14 +20,14 @@
     width: fit-content;
     padding: var(--padding-sm);
     font-weight: 600;
-    color: var(--mainWhite);
+    color: var(--white);
     cursor: pointer;
   }
   
   .footer-list-item:focus,
   .footer-list-item:hover {
     color: var(--mainHover);
-    text-shadow: 0px 0px 30px white,0px 0px 30px white,0px 0px 30px white,0px 0px 10px #ffffff,0px 0px 10px #ffffff;
+    text-shadow: 0px 0px 30px var(--white),0px 0px 30px var(--white),0px 0px 30px var(--white),0px 0px 10px var(--white),0px 0px 10px var(--white);
   }
   
   .footer-brand {
@@ -53,7 +53,7 @@
 
   .footer-socials div i {
     padding: var(--padding-sm);
-    color: var(--mainWhite);
+    color: var(--white);
     cursor: pointer;
   }
   
@@ -61,7 +61,7 @@
   .footer-socials div i:hover {
     cursor: pointer;
     scale: 1.2;
-    text-shadow: 0px 0px 30px white,0px 0px 30px white,0px 0px 30px white,0px 0px 10px #ffffff,0px 0px 10px #ffffff;
+    text-shadow: 0px 0px 30px var(--white),0px 0px 30px var(--white),0px 0px 30px var(--white),0px 0px 10px var(--white),0px 0px 10px var(--white);
   }
 
   /* #### Desktops #### */

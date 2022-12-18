@@ -1,7 +1,10 @@
+import { useGlobalContext } from "../context/GlobalContext";
 import "./About.css";
 import { Timeline } from "./Timeline";
 
 export function About() {
+  const { lightThemeGlobal } = useGlobalContext();
+
   const openSocial = (socialLink: string) => {
     window.open(socialLink);
   };
@@ -53,7 +56,11 @@ export function About() {
 
             <div className="about-me-pic">
               <img
-                src={process.env.PUBLIC_URL + "/assets/me.svg"}
+                src={
+                  process.env.PUBLIC_URL + lightThemeGlobal
+                    ? "/assets/me.svg"
+                    : "/assets/meW.svg"
+                }
                 alt="abountMyPic"
               />
             </div>
@@ -61,7 +68,9 @@ export function About() {
 
           {/* Section two - timeline */}
           <div className="about-section-two flex">
-            <div className="timeline-title">Experience <span>.</span></div>
+            <div className="timeline-title">
+              Experience <span>.</span>
+            </div>
             <Timeline />
           </div>
         </div>

@@ -15,12 +15,12 @@
 .redirect-home-btn {
     cursor: pointer;
     background-color: var(--white);
-    color: black;
+    color: var(--black);
     font-weight: 900;
     font-size: max(2em, 2vw);
     padding: 0.5em 1em;
     border-radius: var(--itemRadius);
-    border: white 1px solid;
+    border: var(--white) 1px solid;
 }
 
 .redirect-home-btn:hover,

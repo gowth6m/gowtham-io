@@ -61,7 +61,7 @@
 }
 
 .about-section-one {
-    background-image: linear-gradient(var(--body), black);
+    background-image: linear-gradient(var(--body), var(--black));
 }
 
 .about-section-two {
@@ -139,7 +139,7 @@
 
     .about-section-one {
         background-color: var(--white);
-        color: black;
+        color: var(--black);
         border-radius: var(--backgroundRadius);
         height: 100%;
         width: calc(100% - 20% - var(--timelineWidth));
@@ -171,7 +171,7 @@
 
     .about-title {
         -webkit-text-stroke-width: 1.2px;
-        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-color: var(--black);
         color: var(--body);
         text-transform: uppercase;
         letter-spacing: -5px;
@@ -185,12 +185,12 @@
     .about-title-other {
         display: initial;
         -webkit-text-stroke-width: 1.2px;
-        -webkit-text-stroke-color: black;
+        -webkit-text-stroke-color: var(--black);
         color: var(--white);
     }
 
     .about-title-other span {
-        color: black;
+        color: var(--black);
     }
 
     .timeline-title {
