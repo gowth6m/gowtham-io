@@ -47,6 +47,7 @@ export function Skills() {
     "HTML-CSS",
     "JavaScript/TS",
     "React",
+    "Next.js",
     "Framer Motion",
     "Vue.js",
     "Tailwind",
@@ -57,6 +58,7 @@ export function Skills() {
     "Django",
     "C, C# & C++",
     "Java",
+    "MongoDB",
     "GraphQL",
     "SQL",
     "Docker",
@@ -67,7 +69,7 @@ export function Skills() {
     "Kotlin",
     "CoreML Models",
     "Lottie",
-    "Chopper",
+    "React Native",
   ]);
   let sectionFour = new SkillsSection("Other", "Test", [
     "GitHub",
