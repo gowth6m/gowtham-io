@@ -10,9 +10,9 @@ export function Timeline() {
     "https://www.exeter.ac.uk/",
     "May 2022 - Present",
     [
-      "Worked on university wide student app in Flutter",
-      "Worked on chatbot used by university students",
-      "Built games in typescript used at student fairs",
+      "Worked on university wide used student app",
+      "Worked on chatbot used by university students and staff",
+      "Built web games used at student fairs",
     ],
     [
       "Flutter",
@@ -32,17 +32,20 @@ export function Timeline() {
     "Mar 2021 - Nov 2021",
     [
       "Worked on website for Swmstudios clients",
-      "Worked on web application for Swmstudios",
+      "Worked on web applications for Swmstudios",
     ],
     [
       "React.js",
       "Flutter",
       "Firebase",
+      "MongoDB",
       "GitHub",
       "AWS Services",
       "Typescript",
       "Framer Motion",
       "Tailwind",
+      "Stripe API",
+      "Paypal API",
     ]
   );
   let three = new TimelineItem(
@@ -59,14 +62,16 @@ export function Timeline() {
       "Worked on website for Nocturnal Nomads",
     ],
     [
-      "Vue.js",
+      "Next.js",
       "Flutter",
       "Django",
       "Firebase",
       "AWS Services",
       "AWS S3",
+      "MongoDB",
       "React.js",
       "Framer Motion",
+      "Paypal API",
     ]
   );
 

@@ -96,7 +96,7 @@ export default function PortfolioItem({
         </div>
       </div>
 
-      {isHovering ? (
+      {isHovering && imageUrl !== "" ? (
         <img
           loading="lazy"
           className="portfolio-item-img"

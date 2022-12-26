@@ -17,17 +17,35 @@ export const data: PortfolioItemProps[] = [
   },
   {
     id: 1,
+    title: "Great Comcat Engineering Website",
+    description:
+      "E-commerce website for Great Comcat Engineering LTD",
+    imageUrl: "",
+    link: "https://www.greatcomcatengineering.com/",
+    github: "https://gowth6m.github.io/great-comcat-engineering/",
+    stack: [
+      "Next.js",
+      "MongoDB",
+      "Tailwind",
+      "Stripe",
+      "Framer Motion",
+      "Paypal"
+    ],
+    filters: ["all", "web", "mobile"],
+  },
+  {
+    id: 2,
     title: "Reddit Viewer",
     description:
       "A small Flutter application to search and view details about Reddit posts as such 'r/topics'",
     imageUrl: "reddit_app.png",
     link: "https://gowth6m.github.io/reddit-viewer/",
     github: "https://github.com/gowth6m/reddit-viewer",
-    stack: ["Flutter", "Typescript", "API"],
+    stack: ["Flutter", "Typescript", "API", "Chopper"],
     filters: ["all", "web", "mobile"],
   },
   {
-    id: 2,
+    id: 3,
     title: "Stugether",
     description:
       "Web application built with Django to connect students together",
@@ -38,7 +56,7 @@ export const data: PortfolioItemProps[] = [
     filters: ["all", "web"],
   },
   {
-    id: 3,
+    id: 4,
     title: "Zombie Maze",
     description:
       "A simple 2D top-down zombie shooting game created in Python using the PyGame library",
@@ -49,7 +67,7 @@ export const data: PortfolioItemProps[] = [
     filters: ["all", "game"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Gravity Simulator",
     description:
       "Simulation of gravity between particles written in JavaScript",
@@ -60,7 +78,7 @@ export const data: PortfolioItemProps[] = [
     filters: ["all", "web"],
   },
   {
-    id: 5,
+    id: 6,
     title: "Lift Simulator",
     description: "A simulation of a lift system implemented in Java with GUI",
     imageUrl: "liftSim.gif",
@@ -70,7 +88,7 @@ export const data: PortfolioItemProps[] = [
     filters: ["all", "other", "data", "desktop"],
   },
   {
-    id: 6,
+    id: 7,
     title: "Human-Object Interaction Research",
     description: "Research on HOI. Evaluation on five HOI models",
     imageUrl: "hoi.png",
@@ -80,7 +98,7 @@ export const data: PortfolioItemProps[] = [
     filters: ["all", "data", "other"],
   },
   {
-    id: 7,
+    id: 8,
     title: "Game of Life in Haskell",
     description:
       "Implementation of Conway's Game of Life in Haskell using an imperative approach",
