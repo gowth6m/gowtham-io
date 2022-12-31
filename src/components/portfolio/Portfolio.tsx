@@ -22,7 +22,7 @@ export const data: PortfolioItemProps[] = [
       "E-commerce website for Great Comcat Engineering LTD",
     imageUrl: "",
     link: "https://www.greatcomcatengineering.com/",
-    github: "https://gowth6m.github.io/great-comcat-engineering/",
+    github: "",
     stack: [
       "Next.js",
       "MongoDB",

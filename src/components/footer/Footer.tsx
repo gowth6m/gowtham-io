@@ -99,7 +99,7 @@ export function Footer() {
                 />
               </div>
               <div className="footer-brand-text">
-                2022 &copy; Gowthaman Ravindrathas
+                2019 &copy; Gowthaman Ravindrathas
               </div>
             </div>
           </div>
