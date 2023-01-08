@@ -1,6 +1,6 @@
 /* Edit variables here to ensure timeline doesn't mess up */
 :root {
-    --timelineWidth: 5px;
+    --timelineWidth: 2px;
     --timelineCircleWidth: 1.4em;
     --timeLineLeftMargin: 8%;
     --timelineItemHeight: 40%;
@@ -44,7 +44,7 @@
     width: calc(100% - var(--timeLineLeftMargin) * 2);
     height: var(--timelineItemHeight);
     margin-left: 8%;
-    margin-bottom: 6%;
+    margin-bottom: 8%;
     position: relative;
     transform-origin: -0% 50%;
 }
@@ -59,10 +59,11 @@
     border-radius: 50%;
     width: var(--timelineCircleWidth);
     height: var(--timelineCircleWidth);
-    background-color: var(--white);
+    background-color: var(--body);
+    border: var(--timelineWidth) var(--white) solid;
     position: absolute;
     top: calc(50% - var(--timelineCircleWidth)/2);
-    left: calc(-0% - var(--timelineCircleWidth) / 2 + var(--timelineWidth)/2);
+    left: calc(-0% - var(--timelineCircleWidth) / 2 + var(--timelineWidth)/2 - var(--timelineWidth));
 }
 
 .about-timeline-item-container {
@@ -70,7 +71,7 @@
     border-radius: 10px;
     padding: 1em;
     color: var(--white);
-    background-color: var(--body);
+    background-color: var(--black);
     border: 2px var(--white) solid;
     width: calc(100% - var(--timelineCircleWidth) - var(--gapBetween));
     margin: 0 calc(var(--timelineCircleWidth) + var(--gapBetween));
@@ -190,5 +191,9 @@
 
     .about-timeline-item-dates {
         display: none;
+    }
+
+    .about-timeline-item {
+        margin-bottom: 3%;
     }
 }

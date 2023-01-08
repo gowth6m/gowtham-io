@@ -71,12 +71,8 @@ export function About() {
 
               <div className="about-me-pic">
                 <img
-                  src={
-                    process.env.PUBLIC_URL + lightThemeGlobal
-                      ? "/assets/me.svg"
-                      : "/assets/meW.svg"
-                  }
-                  alt="abountMyPic"
+                  src={process.env.PUBLIC_URL + "/assets/me.svg"}
+                  alt="aboutMyPic"
                 />
               </div>
             </div>
