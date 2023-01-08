@@ -19,6 +19,7 @@
 .about-timeline {
     height: 100%;
     width: 100%;
+    margin: 0 auto;
     position: relative;
     padding: 0;
 }
@@ -98,7 +99,7 @@
     width: 4em;
     border-radius: var(--itemRadius);
     background-color: #f8f8f8;
-    border: 1px solid black;
+    border: 2px solid black;
     overflow: hidden;
 }
 
