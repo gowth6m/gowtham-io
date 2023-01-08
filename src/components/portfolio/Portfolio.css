@@ -55,6 +55,7 @@
     font-weight: 600;
     border: var(--white) 2px solid;
     margin: 1em 0;
+    width: 100%;
 }
 
 .portfolio-preview-view-more:hover,

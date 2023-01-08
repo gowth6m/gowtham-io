@@ -78,13 +78,14 @@ export function Skills() {
     "PyTorch",
     "Figma",
     "Unity",
+    "Vercel",
     "Jira",
   ]);
 
   return (
     <div id="skills" className="skills-page flex">
       <div className="skills-page-container screen-max">
-        <div className="skills-title section-title">
+        <div className="skills-title">
           Skills<span> .</span>
         </div>
         <div className="skills-container">

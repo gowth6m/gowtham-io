@@ -27,7 +27,7 @@ export function Timeline() {
     "swmstudios",
     "Frontend Developer",
     "@Swimstudios",
-    "swmstudios_logo.png",
+    "swmstudios_logo.svg",
     "https://swmstudios.com/",
     "Mar 2021 - Nov 2021",
     [

@@ -27,6 +27,22 @@
     width: 95%;
 }
 
+.skills-title {
+    font-weight: 900;
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: var(--white);
+    color: var(--white);
+    text-transform: uppercase;
+    letter-spacing: -5px;
+    font-size: max(3.5em, 5vw);
+    margin: 5% 0;
+    font-family: var(--title-font);
+}
+
+.skills-title span {
+    color: var(--black);
+}
+
 .skills-subtitle {
     font-weight: 800;
     font-size: max(1.6em, 2vw);

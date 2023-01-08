@@ -109,7 +109,7 @@
     font-weight: 900;
     -webkit-text-stroke-width: 1.2px;
     -webkit-text-stroke-color: var(--white);
-    color: var(--body);
+    color: var(--white);
     text-transform: uppercase;
     letter-spacing: -5px;
     font-size: max(3.5em, 5vw);
@@ -118,7 +118,7 @@
 }
 
 .timeline-title span {
-    color: var(--white);
+    color: var(--body);
 }
 
 @media screen and (min-width: 768px) {

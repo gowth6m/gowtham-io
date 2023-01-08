@@ -68,8 +68,9 @@
     text-align: left;
     border-radius: 10px;
     padding: 1em;
-    color: var(--black);
-    background-color: var(--white);
+    color: var(--white);
+    background-color: var(--body);
+    border: 2px var(--white) solid;
     width: calc(100% - var(--timelineCircleWidth) - var(--gapBetween));
     margin: 0 calc(var(--timelineCircleWidth) + var(--gapBetween));
 }
@@ -96,11 +97,12 @@
     max-width: 25%;
     width: 4em;
     border-radius: var(--itemRadius);
-    background-color: var(--black);
+    background-color: #f8f8f8;
+    border: 1px solid black;
+    overflow: hidden;
 }
 
 .about-timeline-item-logo {
-    filter: grayscale();
     width: 100%;
     object-fit: cover;
     
@@ -133,30 +135,13 @@
 
 .about-timeline-item-dates {
     padding: 5px 10px;
-    background-color: var(--black);
+    background-color: var(--white);
     border-radius: var(--itemRadius);
-    border: 1px solid var(--black);
-    color: var(--white);
+    border: 1px solid var(--white);
+    color: var(--black);
     font-size: var(--textItemSize);
     cursor: pointer;
     margin: 4px 2px;
-}
-
-.about-timeline-item-btn {
-    padding: 5px 10px;
-    background-color: var(--black);
-    border-radius: 10px;
-    border: 1px solid var(--black);
-    color: var(--white);
-    margin-left: auto;
-    font-size: var(--textItemSize);
-    cursor: pointer;
-}
-
-.about-timeline-item-btn:focus,
-.about-timeline-item-btn:hover {
-    background-color: var(--white);
-    color: var(--black);
 }
 
 .about-timeline-item-bottom {
@@ -166,13 +151,13 @@
 }
 
 .timeline-item-tags {
-    background-color: var(--black);
+    background-color: var(--white);
     font-size: var(--textItemSize);
     padding: 5px 10px;
     margin: 2px;
-    color: var(--white);
+    color: var(--black);
     border-radius: var(--itemRadius);
-    border: 1px solid var(--black);
+    border: 1px solid var(--white);
 }
 
 .hidden-timeline-date {
@@ -185,12 +170,12 @@
         order: 3;
         margin-left: auto;
         margin-right: 2px;
-        background-color: var(--black);
+        background-color: var(--white);
         font-size: var(--textItemSize);
         padding: 5px 10px;
-        color: var(--white);
+        color: var(--black);
         border-radius: var(--itemRadius);
-        border: 1px solid var(--black);
+        border: 1px solid var(--white);
     }
 
     .timeline-row {
