@@ -17,8 +17,7 @@ export function Home() {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState("");
   const [delta, setDelta] = useState(typingDelay);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [index, setIndex] = useState(1);
+  const [, setIndex] = useState(1);
   const period = 2000;
 
   const toRotate = [
@@ -39,8 +38,7 @@ export function Home() {
     return () => {
       clearInterval(ticker);
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [text]);
+  });
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -119,7 +117,6 @@ export function Home() {
       ) : (
         <PortfolioPreview />
       )}
-      {/* <PortfolioPreview /> */}
 
       <Separator />
       <Skills />
