@@ -1,9 +1,9 @@
-import { useGlobalContext } from "../context/GlobalContext";
+// import { useGlobalContext } from "../context/GlobalContext";
 import "./About.css";
 import { Timeline } from "./Timeline";
 
 export function About() {
-  const { lightThemeGlobal } = useGlobalContext();
+  // const { lightThemeGlobal } = useGlobalContext();
 
   const openSocial = (socialLink: string) => {
     window.open(socialLink);
@@ -69,12 +69,13 @@ export function About() {
                 .
               </div>
 
-              <div className="about-me-pic">
-                <img
-                  src={process.env.PUBLIC_URL + "/assets/me.svg"}
-                  alt="aboutMyPic"
-                />
-              </div>
+              {/* <div className="about-me-pic"> */}
+              <img
+                className="about-me-pic"
+                src={process.env.PUBLIC_URL + "/assets/me.svg"}
+                alt="aboutMyPic"
+              />
+              {/* </div> */}
             </div>
           </div>
 
