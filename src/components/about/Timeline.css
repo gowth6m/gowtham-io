@@ -167,6 +167,10 @@
 }
 
 @media screen and (min-width: 768px) { 
+    .about-timeline {
+        margin: 60px auto;
+    }
+
     .hidden-timeline-date {
         display: initial;
         order: 3;
