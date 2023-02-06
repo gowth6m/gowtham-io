@@ -1,7 +1,28 @@
-import { motion, Variants } from "framer-motion";
+// import { motion, Variants } from "framer-motion";
 import "./Timeline.css";
 
 export function Timeline() {
+  // let zero = new TimelineItem(
+  //   "uoe",
+  //   "Frontend Developer",
+  //   "@Hived",
+  //   "hived_logo.svg",
+  //   "https://www.hived.space/",
+  //   "Feb 2023 - Present",
+  //   [
+  //     "Worked on creating frontend solutions for services used by both clients and drivers",
+  //   ],
+  //   [
+  //     "Flutter",
+  //     "React.js",
+  //     "Firebase",
+  //     "AWS Services",
+  //     "Typescript",
+  //     "Framer Motion",
+  //     "AWS Cognito",
+  //     "AWS S3",
+  //   ]
+  // );
   let one = new TimelineItem(
     "uoe",
     "App Developer",
@@ -79,6 +100,7 @@ export function Timeline() {
     <div className="about-timeline-container">
       <div className="about-timeline">
         {/* Items */}
+        {/* {zero.display()} */}
         {one.display()}
         {two.display()}
         {three.display()}
@@ -123,16 +145,16 @@ class TimelineItem {
 
   display() {
     return (
-      <motion.div
+      <div
         className="about-timeline-item"
-        transition={{
-          duration: 0.8,
-          delay: 0,
-        }}
-        initial="offscreen"
-        whileInView="onscreen"
-        variants={itemVariants}
-        viewport={{ once: true }}
+        // transition={{
+        //   duration: 0.8,
+        //   delay: 0,
+        // }}
+        // initial="offscreen"
+        // whileInView="onscreen"
+        // variants={itemVariants}
+        // viewport={{ once: true }}
       >
         <div className="about-timeline-item-container">
           <div className="about-timeline-item-context">
@@ -189,21 +211,21 @@ class TimelineItem {
             </div>
           </div>
         </div>
-      </motion.div>
+      </div>
     );
   }
 }
 
-const itemVariants: Variants = {
-  offscreen: {
-    scale: 0,
-  },
-  onscreen: {
-    scale: 1,
-    transition: {
-      type: "spring",
-      bounce: 0.5,
-      duration: 1,
-    },
-  },
-};
+// const itemVariants: Variants = {
+//   offscreen: {
+//     scale: 0,
+//   },
+//   onscreen: {
+//     scale: 1,
+//     transition: {
+//       type: "spring",
+//       bounce: 0.5,
+//       duration: 1,
+//     },
+//   },
+// };

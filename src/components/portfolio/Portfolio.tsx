@@ -20,7 +20,7 @@ export const data: PortfolioItemProps[] = [
     title: "Great Comcat Engineering Website",
     description:
       "E-commerce website for Great Comcat Engineering LTD",
-    imageUrl: "",
+    imageUrl: "gce_web.png",
     link: "https://www.greatcomcatengineering.com/",
     github: "",
     stack: [
