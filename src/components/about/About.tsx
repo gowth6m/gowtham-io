@@ -38,15 +38,15 @@ export function About() {
                 engineering to UI/UX. I love making user & browser-friendly
                 websites and apps as well as creating solutions for problems.
                 <br></br>
-                <br></br>I am based in London, UK - currently working as an App
-                Developer at the{" "}
+                <br></br>I am based in London, UK - currently working as a
+                Frontend Developer at the{" "}
                 <span
                   className="about-body-link"
                   onClick={() => {
-                    openSocial("https://www.exeter.ac.uk/");
+                    openSocial("https://hived.space");
                   }}
                 >
-                  University of Exeter
+                  Hived
                 </span>
                 .<br></br>
                 <br></br>

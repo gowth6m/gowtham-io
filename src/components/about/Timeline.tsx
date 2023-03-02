@@ -2,30 +2,32 @@
 import "./Timeline.css";
 
 export function Timeline() {
-  // let zero = new TimelineItem(
-  //   "uoe",
-  //   "Frontend Developer",
-  //   "@Hived",
-  //   "hived_logo.svg",
-  //   "https://www.hived.space/",
-  //   "Feb 2023 - Present",
-  //   [
-  //     "Worked on creating frontend solutions for services used by both clients and drivers",
-  //   ],
-  //   [
-  //     "Flutter",
-  //     "React.js",
-  //     "Firebase",
-  //     "AWS Services",
-  //     "Typescript",
-  //     "Framer Motion",
-  //     "AWS Cognito",
-  //     "AWS S3",
-  //   ]
-  // );
+  let zero = new TimelineItem(
+    "hived",
+    "Frontend Developer",
+    "@Hived",
+    "hived_logo.svg",
+    "https://www.hived.space/",
+    "Feb 2023 - Present",
+    [
+      "Worked on creating frontend solutions for services used by both clients and drivers",
+      "Designed and planned out frontend architecture for new services",
+      "Create and deploy services to AWS using AWS CDK",
+    ],
+    [
+      "Flutter",
+      "React.js",
+      "Firebase",
+      "AWS Services",
+      "Typescript",
+      "AWS CDK",
+      "API Gateway",
+      "AWS S3",
+    ]
+  );
   let one = new TimelineItem(
     "uoe",
-    "App Developer",
+    "Junior Software Engineer",
     "@University of Exeter",
     "uoe_white_logo.svg",
     "https://www.exeter.ac.uk/",
@@ -39,7 +41,7 @@ export function Timeline() {
       "Flutter",
       "AWS Services",
       "Typescript",
-      "GraphQL",
+      "AWS CDK",
       "AWS Cognito",
       "AWS S3",
     ]
@@ -100,7 +102,7 @@ export function Timeline() {
     <div className="about-timeline-container">
       <div className="about-timeline">
         {/* Items */}
-        {/* {zero.display()} */}
+        {zero.display()}
         {one.display()}
         {two.display()}
         {three.display()}
