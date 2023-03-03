@@ -12,7 +12,7 @@ export function Timeline() {
     [
       "Worked on creating frontend solutions for services used by both clients and drivers",
       "Designed and planned out frontend architecture for new services",
-      "Create and deploy services to AWS using AWS CDK",
+      "Create and deploy services using AWS CDK",
     ],
     [
       "Flutter",

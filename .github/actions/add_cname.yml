@@ -1,0 +1,20 @@
+name: Add CNAME file
+
+on:
+  push:
+    branches:
+      - gh-pages
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Create CNAME file
+      run: echo 'gowtham.io' > CNAME && echo 'www.gowtham.io' >> CNAME
+    - name: Commit and push changes
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: 'Add CNAME file'
+        commit_options: '--author "GitHub Actions <actions@github.com>"'
