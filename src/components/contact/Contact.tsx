@@ -2,9 +2,6 @@ import React from "react";
 import "./Contact.css";
 
 export function Contact() {
-  // const openSocial = (socialLink: string) => {
-  //   window.open(socialLink);
-  // };
 
   // const handleClickScroll = (id: string) => {
   //   const element = document.getElementById(id);
