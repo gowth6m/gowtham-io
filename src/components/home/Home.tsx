@@ -23,7 +23,7 @@ export function Home() {
   const toRotate = [
     "who likes to try new food",
     "who likes problem solving",
-    "who is an app developer at the university of exeter",
+    "who is a software engineer at hived",
     "who loves the gym!",
     "who is looking for new opportunities",
     "who wants to get into machine learning",

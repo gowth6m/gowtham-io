@@ -8,7 +8,7 @@ export function Timeline() {
     "@Hived",
     "hived_logo.svg",
     "https://www.hived.space/",
-    "Feb 2023 - Present",
+    "Jan 2023 - Present",
     [
       "Worked on creating frontend solutions for services used by both clients and drivers",
       "Designed and planned out frontend architecture for new services",
@@ -27,11 +27,11 @@ export function Timeline() {
   );
   let one = new TimelineItem(
     "uoe",
-    "Junior Software Engineer",
+    "Software Engineer",
     "@University of Exeter",
     "uoe_white_logo.svg",
     "https://www.exeter.ac.uk/",
-    "May 2022 - Present",
+    "Jan 2022 - Jan 2023",
     [
       "Worked on university wide used student app",
       "Worked on chatbot used by university students and staff",
@@ -46,57 +46,7 @@ export function Timeline() {
       "AWS S3",
     ]
   );
-  let two = new TimelineItem(
-    "swmstudios",
-    "Frontend Developer",
-    "@Swimstudios",
-    "swmstudios_logo.svg",
-    "https://swmstudios.com/",
-    "Mar 2021 - Nov 2021",
-    [
-      "Worked on website for Swmstudios clients",
-      "Worked on web applications for Swmstudios",
-    ],
-    [
-      "React.js",
-      "Flutter",
-      "Firebase",
-      "MongoDB",
-      "GitHub",
-      "AWS Services",
-      "Typescript",
-      "Framer Motion",
-      "Tailwind",
-      "Stripe API",
-      "Paypal API",
-    ]
-  );
-  let three = new TimelineItem(
-    "nocxa",
-    "Software Developer",
-    "@Nocxa",
-    "nocxa_logo.svg",
-    "https://nocxa.com/",
-    "Sep 2019 - Feb 2021",
-    [
-      "Managed team of developers on various projects",
-      "Worked on e-commerce website for Great Comcat Engineering",
-      "Worked on e-commerce website for Di-tea bubble tea",
-      "Worked on website for Nocturnal Nomads",
-    ],
-    [
-      "Next.js",
-      "Flutter",
-      "Django",
-      "Firebase",
-      "AWS Services",
-      "AWS S3",
-      "MongoDB",
-      "React.js",
-      "Framer Motion",
-      "Paypal API",
-    ]
-  );
+
 
   return (
     <div className="about-timeline-container">
@@ -104,8 +54,6 @@ export function Timeline() {
         {/* Items */}
         {zero.display()}
         {one.display()}
-        {two.display()}
-        {three.display()}
       </div>
     </div>
   );
